@@ -11,7 +11,7 @@ st.set_page_config(
     page_icon="app/logo/barcelona.png"
 )
 
-# create database tables and load CSV files (runs only once)
+# create database tables and load CSV files 
 create_tables()
 load_csv_if_empty()
 
