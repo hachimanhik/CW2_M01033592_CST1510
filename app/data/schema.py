@@ -22,7 +22,7 @@ def create_tables():
         )
     """)
 
-    # cyber incidents table
+    # cyber incidents table for the dashboard
     cur.execute("""
         CREATE TABLE IF NOT EXISTS cyber_incidents (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -49,7 +49,7 @@ def create_tables():
         )
     """)
 
-    # datasets metadata table (full info from CSV)
+    # datasets metadata table 
     cur.execute("""
         CREATE TABLE IF NOT EXISTS datasets_metadata (
             dataset_id INTEGER,
@@ -61,7 +61,7 @@ def create_tables():
         )
     """)
 
-    # datasets table (simple for dashboard)
+    # datasets table 
     cur.execute("""
         CREATE TABLE IF NOT EXISTS datasets_metadata (
             dataset_id INTEGER PRIMARY KEY AUTOINCREMENT,
