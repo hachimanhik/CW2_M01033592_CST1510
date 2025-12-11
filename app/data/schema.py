@@ -22,7 +22,7 @@ def create_tables():
         )
     """)
 
-    # cyber incidents table for the dashboard
+    # cyber incidents table 
     cur.execute("""
         CREATE TABLE IF NOT EXISTS cyber_incidents (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
