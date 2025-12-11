@@ -46,7 +46,7 @@ with st.sidebar:
         ["General", "Cybersecurity", "IT Support", "Datasets"]
     )
 
-# short domain behaviour setup
+# domains options
 def get_domain_instruction(domain):
     if domain == "Cybersecurity":
         return "You are a cybersecurity expert. Answer using cybersecurity knowledge."
@@ -57,7 +57,7 @@ def get_domain_instruction(domain):
     else:
         return "You are a helpful assistant."
 
-# create system message
+# system message
 system_message = {
     "role": "system",
     "content": get_domain_instruction(domain)
